@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, poppins, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.page {
+  @apply m-auto lg:w-9/12 md:w-10/12 sm:w-11/12 pt-1 mt-8 min-h-screen bg-white opacity-100
+}
+
+.subPage {
+  @apply w-10/12 pt-1 min-h-screen mx-auto px-0
+}
+
+.navLink {
+  @apply my-auto text-lg mx-2 text-[#DCDCDC] hover:text-white cursor-pointer
+}
+
+textarea{
+  @apply focus:outline-offset-0 focus:outline-none resize-none p-1
+}
+
+input{
+  @apply focus:outline-offset-0 focus:outline-none 
+}
+
+option{
+  @apply bg-black before:hover:bg-black 
+}
+
+td{
+  @apply text-center border-b-[1px] border-t-gray-200 p-2 border-collapse
+}
+
+th{
+  @apply text-center border-gray-200 p-4 border-collapse
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: textfield;
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance:textfield;
+}
+
+.esri-view .esri-view-surface--inset-outline:focus::after {
+  outline: none !important;
+}
+
+.esri-popup__footer {   
+  display: none !important; 
+}
+.esri-attribution__sources { 
+  display: none !important; 
+}
+
+.esri-zoom {
+  display: none !important; 
+}
+.esri-ui .esri-attribution {
+  display: none !important; 
+}
